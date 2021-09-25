@@ -5,19 +5,10 @@ import 'dart:io';
 void main() {
   print("'CHECKING OF VOWELS CHARACTER'");
   print("Please input one character only:");
-  var A = stdin.readLineSync();
+  var I = stdin.readLineSync();
+  List<String> vowels = ["A", "a", "E", "e", "I", "i", "O", "o", "U", "u"];
   print("Question: It's a vowel character?");
-
-  if (A == "a" ||
-      A == "A" ||
-      A == "e" ||
-      A == "E" ||
-      A == "i" ||
-      A == "I" ||
-      A == "o" ||
-      A == "O" ||
-      A == "u" ||
-      A == "U") {
+  if (vowels.contains(I)) {
     print("Answer: True");
   } else {
     print("Answer: False");

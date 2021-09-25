@@ -1,2 +1,12 @@
 ANSWER 01:
 
+void main() {
+  List<String> inputs = ["Ball()", "Ball()", "Ball()", "Ball()", "Ball()"];
+  List<String> nonDuplicateList = [];
+  for (var i in inputs) {
+    if (!nonDuplicateList.contains(i)) {
+      nonDuplicateList.add(i);
+    }
+  }
+  print(nonDuplicateList);
+}
