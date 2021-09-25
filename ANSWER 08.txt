@@ -1,0 +1,34 @@
+ANSWER 08:
+
+*TEMPERATURE CONVERTER:
+i)CELCIUS TO FAHRENHEIT: 
+
+import 'dart:io';
+
+void main() {
+  print("'Temperature Converter'");
+  print("Dgree celcius to degree fahrenheit conversion:");
+  print("Input: Temperature in degree celcius =");
+  var A = (stdin.readLineSync());
+  if (A != null) {
+    var T_celcius = num.parse(A);
+    var T_fahrenheit = (T_celcius * 9 / 5) + 32;
+    print("Output: Temperature in degree fahrenheit = $T_fahrenheit");
+  }
+}
+
+ii)FAHRENHEIT TO CELCIUS:
+
+ import 'dart:io';
+
+void main() {
+  print("'Temperature Converter'");
+  print("Dgree fahrenheit to degree celcius conversion:");
+  print("Input: Temperature in degree fahrenheit =");
+  var A = (stdin.readLineSync());
+  if (A != null) {
+    var T_fahrenheit = num.parse(A);
+    var T_celcius = (T_fahrenheit - 32) * 5 / 9;
+    print("Output: Temperature in degree celcius = $T_celcius");
+  }
+}

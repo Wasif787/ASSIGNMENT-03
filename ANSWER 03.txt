@@ -1,0 +1,27 @@
+ANSWER 03:
+
+FOR GIVEN LIST:
+
+void main() {
+  var a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100];
+  var b = [1, 9, 25, 49, 81];
+  a.removeWhere((e) => b.contains(e));
+  print(a);
+}
+
+FOR ANY LIST:
+
+void main() {
+  var List = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100];
+  print("List length: ${List.length}");
+  print("Even numbers from the given list are:");
+  int i = 0;
+  while (i <= List.length - 1) {
+    int v = List[0 + i];
+    int a = v % 2;
+    i++;
+    if (a == 0) {
+      print(v);
+    }
+  }
+}

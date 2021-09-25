@@ -1,0 +1,12 @@
+ANSWER 07:
+
+void main() {
+  print("Multiples of 5 from 1 to 100");
+  var i = 1;
+  var num1 = 5;
+  while (i * num1 <= 100) {
+    var R = i * num1;
+    print(R);
+    i++;
+  }
+}

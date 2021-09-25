@@ -1,0 +1,23 @@
+ANSWER 04:
+
+CODE: PRIME NO. OR NOT
+
+import 'dart:io';
+
+void main() {
+  print("Please input any number:");
+  var a = (stdin.readLineSync());
+  if (a != null) {
+    var num1 = num.parse(a);
+    var b = num1 % 2;
+    if (b == 0) {
+      print("It's not a Prime Number!");
+    } else if (b != 0) {
+      b = num1 % 3;
+      if (b == 0) {
+        print("It's not a Prime Number!");
+      } else
+        print("It's a Prime Number!");
+    }
+  }
+}

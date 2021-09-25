@@ -1,0 +1,8 @@
+ANSWER 02:
+
+void main() {
+  var List1 = [1, 2, 3, 4, 5, 6, 7];
+  var List2 = [3, 5, 6, 7, 9, 10];
+  List1.removeWhere((e) => List2.contains(e));
+  print(List1);
+}

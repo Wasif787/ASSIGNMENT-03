@@ -1,0 +1,33 @@
+ANSWER 09:
+
+CALCULATOR:
+
+import 'dart:io';
+
+void main() {
+  print("'CALCULATOR'");
+  print("Please input first number:");
+  var A = stdin.readLineSync();
+  print("Choose an operator:");
+  var C = stdin.readLineSync();
+  print("Please input second number:");
+  var B = stdin.readLineSync();
+  if (A != null && B != null) {
+    var num1 = num.parse(A);
+    var num2 = num.parse(B);
+
+    if (C == "+") {
+      print("Result: ${num1 + num2}");
+    } else if (C == "-") {
+      print("Result: ${num1 - num2}");
+    } else if (C == "*") {
+      print("Result: ${num1 * num2}");
+    } else if (C == "/") {
+      print("Result: ${num1 / num2}");
+    } else if (C == "%") {
+      print("Result: ${num1 % num2}");
+    } else {
+      print("ERROR!");
+    }
+  }
+}

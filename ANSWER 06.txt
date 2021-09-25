@@ -1,0 +1,14 @@
+ANSWER 06:
+
+
+void main() {
+  var fruits = ["apple", "banana", "mango", "orange", "strawberry"];
+  print("Total no. of Items:");
+  print(fruits.length);
+  print("Name of Items:");
+  for (var i = 0; i <= fruits.length - 1; i++) {
+    var v = fruits[0 + i];
+
+    print(v);
+  }
+}

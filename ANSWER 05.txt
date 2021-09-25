@@ -1,0 +1,16 @@
+ANSWER 05:
+
+TABLE OF 7:
+
+void main() {
+  print("Table of 7 (from 1 to 15)");
+  var num1 = 7;
+  var i = 1;
+  var n = 1;
+  while (i <= 15 && n <= 15) {
+    var R = i * num1;
+    print("7 x $n = $R");
+    i++;
+    n++;
+  }
+}
